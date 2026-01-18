@@ -75,7 +75,10 @@ function printDailySummary(log) {
 // days on which the book title was read, and one based on total minutes.  This would occur by adding a new function, and
 // renaming the other function for clarity (something like mostReadBookDays, and mostReadBookMinutes--ungainly, but more
 // specific names).
-addReadBook("Sunday", "Foundation", 1000);  //Added code, this demos unexpected return of most read book as Dune.
+// **Major Improvement - In a perfect world, this would have a field in HTML that would accept additional reading logs, and
+// manage to accept multiple books per day, but handle their total minutes and output the total in a single line, as well as
+// order the days of the week, even if ingestion of the new entry occurred asynchronously, or retroactively.
+addReadBook("Sunday", "Foundation", 1000);  //**Added code still returns most read book as Dune, & wrecks day ordering in output.
 addReadBook("Saturday", "Dune", 50); printDailySummary(readingLog);  // This logs 1 book title per day, but can't handle extra (output wise).
 console.log("Total minutes read:", totalReadingMinutes(readingLog));
 console.log("Most read book:", mostReadBook(readingLog));
