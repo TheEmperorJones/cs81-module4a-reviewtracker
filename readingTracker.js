@@ -1,3 +1,5 @@
+//https://github.com/TheEmperorJones/cs81-module4a-reading
+
 // Weekly reading log
 const readingLog = [  // This creates a binding of readingLog to an array of initial data.
   { day: "Monday", book: "Dune", minutes: 30 }, // This array logs day/book/minutes.
